@@ -23,13 +23,12 @@ requirements:
     - python >=3.6
     - setuptools
   run:
-    - babel
-    - iso8601
+    - pbr
     - keystoneauth1
+    - iso8601
     - oslo.i18n
     - oslo.serialization
     - oslo.utils
-    - pbr
     - prettytable <0.8,>=0.7.2
     - python >=3.6
     - setuptools
@@ -41,7 +40,7 @@ test:
 
 about:
   home: https://docs.openstack.org/python-novaclient/latest
-  license: Apache Software
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: Client library for OpenStack Compute API
