@@ -1,5 +1,5 @@
 {% set name = "python-novaclient" %}
-{% set version = "17.1.0" %}
+{% set version = "17.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d02a6727637ed2a33fb1269babd2b72647f983d53f70cfe3bb9de7247240ab47
+  sha256: cda999e2254787b962e14859f6ca71de640963f3b35c1685fb51ce3a7a0a8958
 
 build:
   number: 0
@@ -24,15 +24,15 @@ requirements:
     - setuptools
   run:
     - pbr
-    - keystoneauth1
-    - iso8601
-    - oslo.i18n
-    - oslo.serialization
-    - oslo.utils
+    - keystoneauth1 >=3.5.0
+    - iso8601 >=0.1.11
+    - oslo.i18n >=3.15.3
+    - oslo.serialization >2.19.1
+    - oslo.utils >=3.33.0
     - prettytable <0.8,>=0.7.2
     - python >=3.6
-    - setuptools
-    - simplejson
+    - simplejson >=3.5.1
+    - stevedore >=2.0.1
 
 test:
   imports:
