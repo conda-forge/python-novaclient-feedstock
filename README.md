@@ -5,11 +5,13 @@ Home: https://docs.openstack.org/python-novaclient/latest
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-novaclient-feedstock/blob/master/LICENSE.txt)
 
 Summary: Client library for OpenStack Compute API
 
+Development: https://opendev.org/openstack/python-novaclient
 
+Documentation: https://docs.openstack.org/python-novaclient/latest
 
 Current build status
 ====================
