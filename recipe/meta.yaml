@@ -1,5 +1,5 @@
 {% set name = "python-novaclient" %}
-{% set version = "17.7.0" %}
+{% set version = "18.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4ebc27f4ce06c155b8e991a44463b9358596e6856cf171c9af8dc7568d868bed
+  sha256: e9eb2a9bdba464d820c100775c3c2f6493088df66af13dfb9325cc6b865c8d23
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
   host:
     - pbr
     - pip
-    - python >=3.6
+    - python >=3.8
     - setuptools
   run:
     - pbr
@@ -30,7 +30,7 @@ requirements:
     - oslo.serialization >2.19.1
     - oslo.utils >=3.33.0
     - prettytable >=0.7.2
-    - python >=3.6
+    - python >=3.8
     - stevedore >=2.0.1
 
 test:
