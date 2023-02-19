@@ -1,5 +1,5 @@
 {% set name = "python-novaclient" %}
-{% set version = "18.2.0" %}
+{% set version = "18.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 185bbf2cafb5f3d761f272e3e184a700cc7ba5cf7d51619065be7f5c4b5b7cf4
+  sha256: 50f7587c7a2b2528f73505817f9437ac5c1d04d576e9be264d2deeffdb745a76
 
 build:
   number: 0
